@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+
+Entity Usuario {
+ID
+nombre
+correo
+direccion
+pais
+}
+
+Entity Producto {
+codigo
+nombre
+precio
+stock
+proveedor
+}
+
+Entity Administrador {
+ID
+nombre
+correo
+direccion
+pais
+}
+
+Entity CarritoDeCompra {
+Productos
+Cantidad de Productos
+}
+
+CarritoDeCompra "1" --> "1..*" Producto: contiene
+Usuario "1" --> "1..*"Producto: agrega
+Usuario "1" --> "1" CarritoDeCompra: posee
+Administrador "1"--> "0..*"CarritoDeCompra: administra
+
+@enduml

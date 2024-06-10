@@ -1,0 +1,103 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+package cl_ucn_disc_pa_taller3 {
+
+package models{
+
+class Usuario {
+-ID: String
+-nombre: String
+-correo: String
+-direccion: String
+-pais: String
++Usuario(ID: String, nombre: String, correo: String, direccion: String, pais: String, contraseña: String)
++iniciarSesion(correo: String, contraseña: String): boolean
++registrarse(id: String, nombre: String, correo: String, direccion: String, pais: String, contraseña: String): Usuario
++get's()
++set's()
+}
+
+class Producto {
+-codigo: String
+-nombre: String
+-precio: float
+-stock: int
+-proveedor: String
++Producto(codigo: String, nombre: String, precio: float, stock: int, proveedor: String)
++get's()
++set's()
+}
+
+class Administrador {
++Administrador(ID: String, nombre: String, correo: String, direccion: String, pais: String, contraseña: String)
++productoMasVendido(): void
++proveedorConMasVentas(): void
++usuarioConMasCompras(): void
++paisConMasCompras(): void
++guardarRegistroVentas(): void
++get's()
++set's()
+}
+
+class CarritoDeCompra{
+-productos: List<Producto>
++CarritoDeCompra()
++agregarProducto(producto: Producto, cantidad: int): void
++eliminarProducto(producto: Producto): void
++agregarCantidadProducto(producto: Producto, cantidad: int): void
++calcularTotal(): float
++vaciarCarrito(): void
++get's()
++set's()
+}
+}
+
+
+package services{
+interface ISistemaCompras {
++leerProductos(archivo: String): void
++guardarProductos(archivo: String): void
++guardarUsuarios(archivo: String): void
++verificarUsuario(correo: String, contraseña: String): Usuario
++agregarUsuario(usuario: Usuario): void
++buscarProductoPorCodigo(codigo: String): Producto
++buscarProductoPorNombre(nombre: String): Producto
++pagar(usuario: Usuario): void
+}
+
+class SistemaCompras {
+-usuarios: List<Usuario>
+-productos: List<Producto>
+
++SistemaCompras()
++leerProductos(archivo: String): void
++guardarProductos(archivo: String): void
++guardarUsuarios(archivo: String): void
++verificarUsuario(correo: String, contraseña: String): Usuario
++agregarUsuario(usuario: Usuario): void
++buscarProductoPorCodigo(codigo: String): Producto
++buscarProductoPorNombre(nombre: String): Producto
++pagar(usuario: Usuario): void
+}
+}
+
+package utils{
+class Instalador{
+- sistemaHaInstalar : ISistemaCompras
++ Instalador()
++ instalarSistema(): ISistemaCompras
+}
+}
+}
+
+Instalador "1" ..> "1" SistemaCompras: instancia
+Instalador "1" --> "1" ISistemaCompras: instala
+SistemaCompras ..|> ISistemaCompras: implementa
+Administrador --|> Usuario: extiende
+Usuario "1" *-- "1" CarritoDeCompra: posee
+CarritoDeCompra *-- Producto: contiene
+SistemaCompras "1" --> "1" CarritoDeCompra: gestiona
+
+
+@enduml
