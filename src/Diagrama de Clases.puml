@@ -41,7 +41,8 @@ class Administrador {
 }
 
 class CarritoDeCompra{
--productos: List<Producto>
+-cabeza: Nodo
+-cantidadElementos: int
 +CarritoDeCompra()
 +agregarProducto(producto: Producto, cantidad: int): void
 +eliminarProducto(producto: Producto): void
@@ -51,7 +52,28 @@ class CarritoDeCompra{
 +get's()
 +set's()
 }
+
+package colecciones{
+
+class Nodo{
+-producto: Producto
+-siguiente: Nodo
++Nodo(producto: Producto)
++getProducto(): Producto
++setSiguiente(siguiente: Nodo): void
++getSiguiente(): Nodo
 }
+
+
+
+
+}
+
+
+}
+
+
+
 
 
 package services{
@@ -67,8 +89,8 @@ interface ISistemaCompras {
 }
 
 class SistemaCompras {
--usuarios: List<Usuario>
--productos: List<Producto>
+-usuarios: ArrayList<Usuario>
+-productos: ArrayList<Producto>
 
 +SistemaCompras()
 +leerProductos(archivo: String): void
@@ -96,8 +118,10 @@ Instalador "1" --> "1" ISistemaCompras: instala
 SistemaCompras ..|> ISistemaCompras: implementa
 Administrador --|> Usuario: extiende
 Usuario "1" *-- "1" CarritoDeCompra: posee
-CarritoDeCompra *-- Producto: contiene
+CarritoDeCompra *-- Nodo: contiene
+Nodo *-- Producto: contiene
 SistemaCompras "1" --> "1" CarritoDeCompra: gestiona
+Nodo "1" o--> "0..1" Nodo
 
 
 @enduml
