@@ -1,0 +1,48 @@
+ P001 , Laptop ABC , 358729 , 30 , CompuWorld 
+ P002 , VR Headset CC , 73268 , 15 , VirtualWorld 
+ P003 , Smartwatch DEF , 16351 , 100 , WatchMakers 
+ P004 , Keyboard PQR , 14827 , 60 , InputDevices 
+ P005 , Smart Home Hub BB , 15384 , 25 , HomeAutomation 
+ P006 , USB Drive YZ , 60854 , 200 , StorageSolutions 
+ P007 , Action Camera DD , 45812 , 35 , CameraGear 
+ P008 , Action Camera DD , 55855 , 35 , CameraGear 
+ P009 , Tablet GHI , 61871 , 20 , TabletPros 
+ P010 , Bluetooth Speaker EE , 14068 , 55 , SoundGear 
+ P011 , USB Drive YZ , 89097 , 200 , StorageSolutions 
+ P012 , Smartphone XYZ , 47242 , 50 , TechCorp 
+ P013 , Smart Home Hub BB , 72179 , 25 , HomeAutomation 
+ P014 , Monitor MNO , 42706 , 40 , DisplayTech 
+ P015 , Smartwatch DEF , 61420 , 100 , WatchMakers 
+ P016 , Bluetooth Speaker EE , 15543 , 55 , SoundGear 
+ P017 , VR Headset CC , 76520 , 15 , VirtualWorld 
+ P018 , Laptop ABC , 353454 , 30 , CompuWorld 
+ P019 , Smartwatch DEF , 73980 , 100 , WatchMakers 
+ P020 , Smartphone XYZ , 43356 , 50 , TechCorp 
+ P021 , Mouse STU , 38267 , 80 , InputDevices 
+ P022 , USB Drive YZ , 86292 , 200 , StorageSolutions 
+ P023 , Laptop ABC , 632411 , 30 , CompuWorld 
+ P024 , Tablet GHI , 79248 , 20 , TabletPros 
+ P025 , Smartwatch DEF , 96800 , 100 , WatchMakers 
+ P026 , Keyboard PQR , 18746 , 60 , InputDevices 
+ P027 , Smart Home Hub BB , 86587 , 25 , HomeAutomation 
+ P028 , Action Camera DD , 32369 , 35 , CameraGear 
+ P029 , Monitor MNO , 34258 , 40 , DisplayTech 
+ P030 , Smartphone XYZ , 95320 , 50 , TechCorp 
+ P031 , Mouse STU , 15121 , 80 , InputDevices 
+ P032 , External HDD VWX , 86620 , 45 , StorageSolutions 
+ P033 , Laptop ABC , 1559980 , 30 , CompuWorld 
+ P034 , Tablet GHI , 97183 , 20 , TabletPros 
+ P035 , Headphones JKL , 17315 , 75 , SoundGear 
+ P036 , Smartphone XYZ , 77765 , 50 , TechCorp 
+ P037 , Bluetooth Speaker EE , 70516 , 55 , SoundGear 
+ P038 , Action Camera DD , 57479 , 35 , CameraGear 
+ P039 , Headphones JKL , 95655 , 75 , SoundGear 
+ P040 , Smartwatch DEF , 30790 , 100 , WatchMakers 
+ P041 , Tablet GHI , 77243 , 20 , TabletPros 
+ P042 , Wireless Charger AA , 52593 , 150 , ChargeTech 
+ P043 , Smart Home Hub BB , 29760 , 25 , HomeAutomation 
+ P044 , VR Headset CC , 64618 , 15 , VirtualWorld 
+ P045 , Bluetooth Speaker EE , 33868 , 55 , SoundGear 
+ P046 , USB Drive YZ , 26626 , 200 , StorageSolutions 
+ P047 , Smartphone XYZ , 97392 , 50 , TechCorp 
+ P048 , Laptop ABC , 1485009 , 30 , CompuWorld 
